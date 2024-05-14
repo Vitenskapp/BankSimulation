@@ -2,10 +2,10 @@ import java.util.Scanner;
 
 public class TerminalAccount {
     public static void main(String[] args) {
-        //TODO: Conhecer e importar a classe Scanner
+        //Conhecer e importar a classe Scanner
         Scanner input = new Scanner(System.in);
 
-        //TODO: Exibir as mensagens para nosso usuário
+        //Exibir as mensagens para nosso usuário
         Display("Por favor, digite o nome da agência: ");
         String agency = input.next();
 
@@ -31,7 +31,7 @@ public class TerminalAccount {
         Display("Digite seu saldo: ");
         double balance = input.nextDouble();
 
-        //TODO: Exibir mensagem de conta criada
+        //Exibir mensagem de conta criada
         if(confirmPassword == password) {
             Display("Olá " + name + ", obrigado por criar uma conta em nosso banco, sua agência é " + agency + ", conta " + agencyID + " e seu saldo " + "R$" + balance + " já está disponível para saque.");
         } else {
